@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Mail, RefreshCcw, CheckCircle, AlertCircle } from 'lucide-react';
 import { supabase } from './lib/supabase';
 
-// --- UI Components ---
 import { StatsGrid } from './components/dashboard/StatsGrid';
 import { DailyCallVolume } from './components/dashboard/charts/DailyCallVolume';
 import { SystemReliability } from './components/dashboard/charts/SystemReliability';
@@ -11,7 +10,6 @@ import { SadPathAnalysis } from './components/dashboard/charts/SadPathAnalysis';
 import { EmailPromptModal } from './components/dashboard/modals/EmailPromptModal';
 import { OverwriteConfirmModal } from './components/dashboard/modals/OverwriteConfirmModal';
 
-// --- Mock Data ---
 import {
     initialCallVolume,
     durationData,

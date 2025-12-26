@@ -3,13 +3,11 @@ import Dashboard from './Dashboard'
 function App() {
   return (
     <div className="min-h-screen bg-background text-foreground">
-      {/* Background Gradients */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none -z-10">
         <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-primary/20 blur-[120px] animate-pulse" />
         <div className="absolute bottom-[0%] right-[0%] w-[30%] h-[30%] rounded-full bg-accent/20 blur-[100px]" />
       </div>
 
-      {/* Navigation */}
       <nav className="border-b border-white/5 bg-background/50 backdrop-blur-md sticky top-0 z-40">
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2">
