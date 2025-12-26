@@ -27,7 +27,7 @@ export const OverwriteConfirmModal: React.FC<OverwriteConfirmModalProps> = ({
                 <div className="grid grid-cols-2 gap-8">
                     <div className="space-y-2">
                         <p className="text-[10px] font-bold text-slate-500 uppercase">Current (Local)</p>
-                        {currentData.slice(0, 5).map(d => (
+                        {currentData.slice(0, 7).map(d => (
                             <div key={d.name} className="flex justify-between text-xs font-mono text-white">
                                 <span className="text-slate-500">{d.name}</span>
                                 <span>{d.value}</span>
@@ -36,7 +36,7 @@ export const OverwriteConfirmModal: React.FC<OverwriteConfirmModalProps> = ({
                     </div>
                     <div className="space-y-2">
                         <p className="text-[10px] font-bold text-slate-500 uppercase">Saved (Cloud)</p>
-                        {savedData && savedData.slice(0, 5).map((d: any) => (
+                        {savedData && savedData.slice(0, 7).map((d: any) => (
                             <div key={d.name} className="flex justify-between text-xs font-mono text-slate-400">
                                 <span className="text-slate-600">{d.name}</span>
                                 <span>{d.value}</span>
